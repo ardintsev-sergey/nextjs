@@ -6,7 +6,7 @@ import styles from './Tag.module.css';
 export const Tag = ({size = 'm', children, href, color = 'ghost', className, ...props}: TagProps): JSX.Element => {
   return (
     <div 
-        className={cn(styles.tag, styles[size], styles[color])}
+        className={cn(className, styles.tag, styles[size], styles[color])}
         {...props}
     >
       {href 
