@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: [start] 70px [logoend] 30px [titlestart] calc(50% - 100px) [middle] 1fr [pricestart] auto [priceend] 40px [creditstart] auto [creditend] 40px [ratestart] auto [end];
     padding: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .logo {
@@ -126,6 +126,21 @@
     border-bottom: 1px dashed var(--gray-light);
 }
 
+.closed {
+    overflow: hidden;
+    padding: 0;
+    max-height: 0;
+}
+
+.opened {
+    padding: 30px;
+    max-height: auto;
+}
+
+/* .reviews {
+    margin-top: -30px;
+} */
+
 @media (max-width: 1320px) {
     .product {
         grid-template-columns:
@@ -236,6 +251,7 @@
         grid-template-columns: 1fr;
         grid-template-areas: 
         "logo"
+        "title"
         "tags"
         "price"
         "priceTitle"
