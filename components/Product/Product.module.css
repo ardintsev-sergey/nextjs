@@ -97,7 +97,7 @@
 }
 
 .advantages {
-    border-left: 2px solid var(--green);
+    border-left: 2px solid #1DC37E;
     margin-bottom: 20px;
     padding-left: 15px;
 }
@@ -126,20 +126,10 @@
     border-bottom: 1px dashed var(--gray-light);
 }
 
-.closed {
+.reviews {
     overflow: hidden;
-    padding: 0;
-    max-height: 0;
-}
-
-.opened {
     padding: 30px;
-    max-height: auto;
 }
-
-/* .reviews {
-    margin-top: -30px;
-} */
 
 @media (max-width: 1320px) {
     .product {

@@ -8,7 +8,7 @@ module.exports = nextConfig;
 
 module.exports = {
   images: {
-    domains: ['courses-top.ru']
+    domains: ['courses-top.ru', 'courses-top.ruhttp']
   },
   webpack(config, options) {
     config.module.rules.push({
