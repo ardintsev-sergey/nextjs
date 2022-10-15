@@ -49,8 +49,9 @@
 .close {
     position: absolute;
     top: 20px;
-    right: 20px;
-    cursor: pointer;
+    right: 20px;    
+    background: transparent;
+    border: none
 }
 
 .error .close path {

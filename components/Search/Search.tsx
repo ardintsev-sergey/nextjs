@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, KeyboardEvent } from 'react';
 import cn from 'classnames';
 import { SearchProps } from './Search.props';
 import styles from './Search.module.css';
@@ -27,7 +27,7 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
   };
   
   return (
-    <div className={cn(className, styles.search)} {...props}>
+    <form className={cn(className, styles.search)} {...props} role='search'>
       <Input 
         className={styles.input}
         placeholder='Поиск...'
@@ -39,9 +39,10 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
         appeareance='primary'
         className={cn(className, styles.btn)}  
         onClick={goToSearch}
+        aria-label="Искать по сайту"
       >
         <SearchIcon />
       </Button>       
-    </div>
+    </form>
   );
 };
