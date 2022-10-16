@@ -18,7 +18,7 @@ a {
 
 :root {
 	--black: #3B434E;
-	--gray-light: #ebebeb;
+	--gray-light: #EBEBEB;
 	--gray-dark: #6C7077;
 	--gray: #A4A4A4;
 	--white: white;
@@ -33,10 +33,10 @@ a {
 }
 
 .visuallyHidden {
+	position: absolute;
 	width: 0;
 	height: 0;
 	overflow: hidden;
-	position: absolute;
 }
 
 @media (prefers-color-scheme: dark) {
