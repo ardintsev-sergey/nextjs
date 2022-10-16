@@ -13,7 +13,7 @@ function Search(): JSX.Element {
 
 export default withLayout(Search);
 
-const getStaticProps: GetStaticProps<HomeProps> = async () => {    
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {    
     const firstCategory=0;
       const { data: menu } = await axios.post<MenuItem[]>(API.topPage.find, {
         firstCategory,      

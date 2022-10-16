@@ -5,7 +5,7 @@ import styles from './Search.module.css';
 import { Input } from '../Input/Input';
 import { Button } from '../Button/Button';
 import SearchIcon from './search.svg';
-import Router, { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
 export const Search = ({className, ...props}: SearchProps): JSX.Element => {
   const router = useRouter();
@@ -30,7 +30,7 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
     <form className={cn(className, styles.search)} {...props} role='search'>
       <Input 
         className={styles.input}
-        placeholder='Поиск...'
+        placeholder='Поиск по сайту'
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         onKeyDown={handleKeyDown}

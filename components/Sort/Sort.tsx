@@ -5,13 +5,7 @@ import styles from './Sort.module.css';
 import SortIcon from './sort.svg';
 
 export const Sort = ({sort, setSort, className, ...props}: SortProps): JSX.Element => {
-
-  const handleKeyDown = (e: KeyboardEvent) => {
-    if (e.key == 'Enter') {
-      setSort(SortEnum.Rating);
-    }
-  };
-
+  
   return (
     <div className={cn(styles.sort, className)} {...props}>
       <div className={styles.sortName} id='sort'>Сортировка</div>

@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ButtonProps } from './Button.props';
 import styles from './Button.module.css';
 import cn from '../../node_modules/classnames/index';
 import ArrowIcon from './arrow.svg';
-import { motion, useMotionValue } from 'framer-motion';
-// import cn from 'classnames'
+import { motion } from 'framer-motion';
 
 export const Button = ({ appeareance, arrow = 'none', children, className, ...props }: ButtonProps): JSX.Element => {
   

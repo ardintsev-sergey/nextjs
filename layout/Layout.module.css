@@ -44,10 +44,8 @@
 	height: auto;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 992px) {
 	.wrapper {
-		/* grid-template-columns: minmax(320px, 1fr);
-		grid-template-rows: auto 1fr auto; */
 		grid-template: auto 1fr auto / minmax(320px, 1fr);
 		grid-template-areas:
 			"header"
@@ -65,3 +63,4 @@
 		padding: 0 15px;
 	}
 }
+
