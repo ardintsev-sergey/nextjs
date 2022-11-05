@@ -25,37 +25,11 @@ function Home({ menu }: HomeProps): JSX.Element {
       <Htag tag='h2'>Вы находитесь на сайте, посвященном курсам</Htag>
       
       <Ptag size='l' className={styles.semiTitle}>Выберите курс в панели слева</Ptag>
-       
-      {/* <div className={styles.counter}>
-        <Htag tag='h2'>{count}</Htag>
-        <Button 
-          appeareance='primary'
-          arrow='right' 
-          className={styles.btnPlus} 
-          onClick={() => setCount(x => x + 1 )}
-        >
-          Кнопка +
-        </Button>
-        <Button
-          appeareance='ghost'
-          arrow='down'
-          onClick={() => setCount(x => x - 1 )}
-        >
-            Кнопка -
-        </Button>
-      </div> */}
-      
-      {/* <form className={styles.form}>
-        <span><Ptag size='s'>Рейтинг</Ptag></span>
-        <Rating rating={rating} isEditable setRating={setRating}/>
-        <Input placeholder='Текст заголовка'/>
-        <Textarea placeholder='Комментарий'/>
-      </form>       */}
-
-         
+                     
       <div className={styles.tags}>
         <Ptag size='s'>Powered by</Ptag>
-        <Tag color='green'>React + Next.js</Tag>
+        <Tag color='green'>React.js</Tag>
+        <Tag color='red'>Next.js</Tag>
         <Tag color='primary'>TypeScript</Tag>
         <Tag color='gray'>CSS Grid</Tag>
       </div>  

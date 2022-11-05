@@ -1,13 +1,13 @@
 .wrapper {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 25% 50% 25%;
+	display: grid;
+	grid-template-rows: 25% 50% 25%;
+	height: 100vh;
 }
 
 .semiTitle {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .tags {
-    margin: 10px 0 10px 0; 
+	margin: 10px 0;
 }

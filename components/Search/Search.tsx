@@ -7,7 +7,7 @@ import { Button } from '../Button/Button';
 import SearchIcon from './search.svg';
 import { useRouter } from 'next/router';
 
-export const Search = ({className, ...props}: SearchProps): JSX.Element => {
+export const Search = ({ className, ...props }: SearchProps): JSX.Element => {
   const router = useRouter();
   const [search, setSearch] = useState<string>('');
 
@@ -15,8 +15,8 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
     router.push({
       pathname: 'search',
       query: {
-        q: search
-      }
+        q: search,
+      },
     });
   };
 
@@ -25,10 +25,14 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
       goToSearch();
     }
   };
-  
+
   return (
-    <form className={cn(className, styles.search)} {...props} role='search'>
-      <Input 
+    <form
+      className={cn(className, styles.search)}
+      {...props}
+      role='search'
+    >
+      <Input
         className={styles.input}
         placeholder='Поиск по сайту'
         value={search}
@@ -37,12 +41,12 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
       />
       <Button
         appeareance='primary'
-        className={cn(className, styles.btn)}  
+        className={cn(className, styles.btn)}
         onClick={goToSearch}
-        aria-label="Искать по сайту"
+        aria-label='Искать по сайту'
       >
         <SearchIcon />
-      </Button>       
+      </Button>
     </form>
   );
 };

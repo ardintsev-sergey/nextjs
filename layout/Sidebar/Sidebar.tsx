@@ -8,10 +8,13 @@ import { Search } from '../../components';
 
 export const Sidebar = ({ className, ...props }: SidebarProps): JSX.Element => {
   return (
-    <div className={cn(className, styles.sidebar)} {...props} >
+    <div
+      className={cn(className, styles.sidebar)}
+      {...props}
+    >
       <a href='/'>
-        <Logo className={styles.logo}/>
-      </a>      
+        <Logo className={styles.logo} />
+      </a>
       <Search />
       <Menu />
     </div>
