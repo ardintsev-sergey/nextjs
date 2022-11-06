@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "ardintsev-sergey.github.io/nextjs/",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "prepare": "husky install",
     "dev": "next dev",
@@ -25,14 +28,15 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.36.1",
-    "react-yandex-metrika": "^2.6.0"
-  },
-  "devDependencies": {
+    "react-yandex-metrika": "^2.6.0",
     "@svgr/webpack": "^6.3.1",
     "@types/node": "^18.7.15",
     "@types/react": "^18.0.18",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
     "eslint": "^8.23.0",
     "eslint-config-next": "12.2.5",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -40,7 +44,6 @@
     "stylelint": "^14.11.0",
     "stylelint-config-property-sort-order-smacss": "^9.0.0",
     "stylelint-config-standard": "^28.0.0",
-    "stylelint-order": "^5.0.0",
-    "typescript": "^4.8.2"
+    "stylelint-order": "^5.0.0"
   }
 }

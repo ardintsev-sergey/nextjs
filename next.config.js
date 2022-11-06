@@ -2,22 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: '/nextjs',
+  // basePath: '/nextjs',
 };
-// const NODE_ENV = process.env.NODE_ENV; // eslint-disable-line
-// const IS_PROD = NODE_ENV === 'production';
 
 module.exports = nextConfig; // eslint-disable-line
 
-// function getBasePath() {
-//   if (IS_PROD) {
-//     return '/nextjs';
-//   } else return '';
-// }
-
 // eslint-disable-next-line
 module.exports = {
-  // basePath: getBasePath(),
+  basePath: '/nextjs',
+  assetPrefix: '/nextjs/',
   images: {
     domains: ['courses-top.ru', 'courses-top.ruhttp'],
   },

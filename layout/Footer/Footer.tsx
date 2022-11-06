@@ -14,7 +14,7 @@ export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
         OwlTop © 2020 - {format(new Date(), 'yyyy')} Все права защищены
       </p>
       <a
-        href='https://ardintsev-sergey.github.io/nextjs/'
+        href='https://github.com/ardintsev-sergey/nextjs'
         target='_blank'
       >
         Repo
