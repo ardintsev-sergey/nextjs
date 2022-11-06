@@ -9,8 +9,8 @@ module.exports = nextConfig; // eslint-disable-line
 
 // eslint-disable-next-line
 module.exports = {
-  basePath: '/nextjs',
-  assetPrefix: '/nextjs/',
+  // basePath: '/nextjs',
+  // assetPrefix: '/nextjs/',
   images: {
     domains: ['courses-top.ru', 'courses-top.ruhttp'],
   },

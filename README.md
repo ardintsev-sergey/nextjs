@@ -1,2 +1,2 @@
 Проект на Next.js
-[Demo](https://ardintsev-sergey.github.io/nextjs)
+[Demo](https://mytop-courses.herokuapp.com/nextjs)
